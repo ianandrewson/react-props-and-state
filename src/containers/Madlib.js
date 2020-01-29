@@ -17,6 +17,7 @@ export default class Madlib extends Component{
     const inputs = [...event.target].map(input => input.value);
     this.setState({ words: inputs });
     this.toggleResult();
+
   }
 
   render() {

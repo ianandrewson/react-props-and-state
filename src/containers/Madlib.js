@@ -14,6 +14,8 @@ export default class Madlib extends Component{
 
   handleSubmit = event => {
     event.preventDefault();
+    const inputs = [...event.target].map(input => input.value);
+    this.setState({ words: inputs });
     this.toggleResult();
   }
 
@@ -23,7 +25,7 @@ export default class Madlib extends Component{
       <>
         <Header />
         {!showResult && <Form onSubmit={this.handleSubmit} />}
-        {showResult && <Result words={[]} closeResult={this.toggleResult} />}
+        {showResult && <Result words={this.state.words} closeResult={this.toggleResult} />}
         <Footer />
       </>
     );

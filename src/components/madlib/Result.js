@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { zoo } from '../../services/madlib';
+import styles from '../../containers/Madlib.css';
 
 const Result = ({ words, closeResult }) => (
-  <>
-    <p>{zoo(...words)}</p>
+  <div className={styles.resultContainer}>
+    <p className={styles.Result}>{zoo(...words)}</p>
     <button onClick={closeResult}>X</button>
-  </>
+  </div>
 );
 
 Result.propTypes = {

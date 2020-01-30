@@ -24,10 +24,10 @@ export default class Madlib extends Component{
     const { showResult } = this.state;
     return (
       <>
-        <Header />
+        <Header/>
         {!showResult && <Form onSubmit={this.handleSubmit} />}
         {showResult && <Result words={this.state.words} closeResult={this.toggleResult} />}
-        <Footer />
+        <Footer/>
       </>
     );
   }

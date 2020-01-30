@@ -1,0 +1,42 @@
+.Header{
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.Footer{
+  display: flex;
+  justify-content: center;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form > input {
+  display: block;
+  width: 200px;
+  margin: 3px;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.Result{
+  width: 800px;
+  height: auto;
+  border: 1px solid black;
+  padding: 7px;
+}
+
+.resultContainer{
+  display: flex;
+  justify-content: center;
+  button {
+    width: 50px;
+    display: block;
+  }
+}
